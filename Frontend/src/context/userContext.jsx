@@ -9,7 +9,7 @@ function UserContext({ children }) {
     const [frontendImage, setFrontendImage] = useState(null);
     const [backendImage, setBackendImage] = useState(null);
 const [selectImage,setSelectImage]=useState()
- const serverUrl = "http://localhost:8000";
+ const serverUrl = "https://vertualassistant-0sin.onrender.com";
 
 
   const handleCurrentUser = async () => {
