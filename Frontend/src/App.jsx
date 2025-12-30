@@ -5,7 +5,7 @@ import Login from './pages/Login'
 import Customized from './pages/Customized'
 import { UserDataContext } from './context/userContext'
 import Home from './pages/Home'
-import Customized2 from './pages/customized2'
+import Customized2 from './pages/Customized2'
 
 const App = () => {
 
