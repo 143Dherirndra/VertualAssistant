@@ -10,7 +10,8 @@ dotenv.config();
 
 const app = express();
 app.use(cors(
- { origin:"https://assistant-lsmc.onrender.com"
+ { origin:"https://vertualassistant-f.onrender.com"
+
   ,
   credentials:true
  }
