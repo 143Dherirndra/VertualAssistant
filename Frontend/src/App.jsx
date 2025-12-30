@@ -22,7 +22,7 @@ const App = () => {
       <Route path='/signup' element={!userData ?<Signup/>:<Navigate to={'/customized'}/>}/>
       <Route path='/login' element={!userData?<Login/>:<Navigate to={'/'}/>}/>
       <Route path='/customized' element={userData?<Customized/>:<Navigate to={'/signup'}/>}/>
-      <Route path='/customized2' element={userData?<Home/>:<Navigate to={'/signup'}/>}/>
+      <Route path='/customized2' element={userData?<customized2/>:<Navigate to={'/signup'}/>}/>
     </Routes>
   )
 }
