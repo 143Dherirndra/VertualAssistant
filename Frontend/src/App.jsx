@@ -15,7 +15,7 @@ const App = () => {
     <Routes>
         {/* <Route path='/' element={(userData?.assistantImage && userData?.assistantName)?
         <Home/>:<Navigate to={'/customized'}/>}/> */}
-        <Route path="/"element={userData?.assistantName? <Home />: <Navigate to="/" />
+        <Route path="/"element={userData?.assistantName? <Home />: <Navigate to="/customized'" />
   }
 />
 
