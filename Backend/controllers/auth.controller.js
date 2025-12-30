@@ -30,8 +30,8 @@ const user = await User.create({
 
        res.cookie("token", token, {
   httpOnly: true,
-  secure: false,        // localhost = false
-  sameSite: "lax",      // ✅ lowercase
+  secure: true,        // localhost = false
+  sameSite: "None,      // ✅ lowercase
   maxAge: 7 * 24 * 60 * 60 * 1000
 });
 
@@ -56,8 +56,8 @@ export const Login= async(req,res)=>{
         res.cookie("token",token,{
             httpOnly:true,
             maxAge:7*24*60*60*1000,
-            sameSite:"strict",
-            secure:false
+            secure: true,        // localhost = false
+            sameSite: "None,
         })
         return res.status(200).json(user)
     } catch (error) {
