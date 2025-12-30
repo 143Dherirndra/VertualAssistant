@@ -1,5 +1,3 @@
-
-
 import React, { useContext, useState } from 'react'
 import { UserDataContext } from '../context/userContext'
 import { useNavigate } from 'react-router-dom'
